@@ -8,6 +8,7 @@ timeline of periods during which particular balances were held.
 
 .. pypi - Everything below this line goes into the description for PyPI.
 
+
 For example, this sequence of events ...
 
 - A: *$10*
@@ -15,9 +16,7 @@ For example, this sequence of events ...
 - C: *($18)*
 - D: *($2)*
 
-... is turned into this timeline.
-
-.. code::
+... is turned into this timeline::
 
     A             B             C             D
     |             |             |             |
