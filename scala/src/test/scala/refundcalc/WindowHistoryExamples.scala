@@ -9,6 +9,11 @@ class WindowHistoryExamples extends FunSuite with Matchers {
 
   test("up, down a little, down to zero") {
     val events = makeCharEventSequence(10, -3, -7)
+    WindowHistory.fromEventSequence(events.take(1)) should equal(
+      WindowHistory(
+        open=Vector(Open(10, 'a'))
+      )
+    )
     WindowHistory.fromEventSequence(events) should equal(
       WindowHistory(
         closed=Vector(Closed(3, 'a', 'b'), Closed(7, 'a', 'c'))
