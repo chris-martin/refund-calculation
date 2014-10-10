@@ -3,10 +3,10 @@ refund_calculation
 
 https://pypi.python.org/pypi/refund_calculation/
 
-.. pypi - Everything below this line goes into the description for PyPI.
-
 Turns a chronological sequence of balance-adjustment events into a
 timeline of periods during which particular balances were held.
+
+.. pypi - Everything below this line goes into the description for PyPI.
 
 For example, this sequence of events ...
 
